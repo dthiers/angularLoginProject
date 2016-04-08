@@ -1,0 +1,13 @@
+<h1>Dashboard</h1>
+
+<h2>I should only be seen if a user is logged in</h2>
+
+<button ng-click="requestJwt()">Request JWT</button>
+
+<pre ng-show="jwt">
+  {{jwt}}
+</pre>
+
+<button ui-sref="admin.logout">Logout</button>
+
+<button ui-sref="admin.timekeepRecords">TimekeepRecord</button>

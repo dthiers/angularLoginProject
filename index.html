@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="app">
+  <head>
+    <title>My Angular App Setup For Me-volution</title>
+    <!-- Angular, you need to include this BEFORE app.js -->
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular/angular-router-ui.js"></script>
+    <!-- localstorage provider -->
+    <script src="lib/angular/ngStorage.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css" />
+  </head>
+  <body>
+
+    <!-- This tag is used for the $routeProvider in app.js. Via AJAX calls the $routeProvider loads in partials -->
+    <!-- <ng-view></ng-view> -->
+    <!-- <div ui-view></div> -->
+    <div ui-view></div ui-view>
+
+    <!-- Include scripts here such as services and controllers, app.js is loaded before the controllers and services. -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/loginCtrl.js"></script>
+    <script src="js/controllers/dashboardCtrl.js"></script>
+    <script src="js/controllers/addUserCtrl.js"></script>
+    <script src="js/controllers/userCtrl.js"></script>
+    <script src="js/controllers/timekeepRecordCtrl.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/authService.js"></script>
+    <script src="js/services/userService.js"></script>
+    <script src="js/services/apiInterceptor.js"></script>
+    <script src="js/services/timekeepService.js"></script>
+
+  </body>
+</html>

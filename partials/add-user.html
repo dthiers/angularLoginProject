@@ -1,0 +1,45 @@
+<div class="content_block adduser">
+  <form class="form-horizontal" name="addUserForm">
+    <!-- Firstname -->
+    <div class="form-group">
+      <label for="input_firstname" class="col-sm-2 control-label">Firstname</label>
+      <div class="col-sm-10">
+        <input type="text" ng-model="newUser.firstname" class="form-control" id="input_firstname" placeholder="Firstname">
+      </div>
+    </div>
+    <!-- Lastname -->
+    <div class="form-group">
+      <label for="input_lastname" class="col-sm-2 control-label">Lastname</label>
+      <div class="col-sm-10">
+        <input type="text" ng-model="newUser.lastname" class="form-control" id="input_lastname" placeholder="Lastname">
+      </div>
+    </div>
+    <!-- Username -->
+    <div class="form-group">
+      <label for="input_username" class="col-sm-2 control-label">Username</label>
+      <div class="col-sm-10">
+        <input type="text" ng-model="newUser.username" class="form-control required" id="input_username" placeholder="Username" required>
+      </div>
+    </div>
+    <!-- Password -->
+    <div class="form-group">
+      <label for="input_password" class="col-sm-2 control-label">Password</label>
+      <div class="col-sm-10">
+        <input type="password" ng-model="newUser.password" class="form-control required" id="input_password" placeholder="Password" required>
+      </div>
+    </div>
+    <!-- Is admin -->
+    <div class="form-group">
+      <label for="is_admin" class="col-sm-2 control-label">Is admin</label>
+      <div class="col-sm-10">
+        <input type="checkbox" ng-model="newUser.isAdmin "name="is_admin" aria-label="...">
+      </div>
+    </div><!-- /input-group -->
+    <!-- Button add -->
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button ng-disabled="addUserFrom.$invalid" ng-click="addUser(newUser)" class="btn btn-default">Add user</button>
+      </div>
+    </div>
+  </form>
+</div>
